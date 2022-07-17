@@ -2,75 +2,75 @@
   "types": {
     "1": {
       "id": 1,
-      "name": "Normal"
+      "name": "一般"
     },
     "2": {
       "id": 2,
-      "name": "Combat"
+      "name": "格斗"
     },
     "3": {
       "id": 3,
-      "name": "Vol"
+      "name": "飞行"
     },
     "4": {
       "id": 4,
-      "name": "Poison"
+      "name": "毒"
     },
     "5": {
       "id": 5,
-      "name": "Sol"
+      "name": "地面"
     },
     "6": {
       "id": 6,
-      "name": "Roche"
+      "name": "岩石"
     },
     "7": {
       "id": 7,
-      "name": "Insecte"
+      "name": "虫"
     },
     "8": {
       "id": 8,
-      "name": "Spectre"
+      "name": "幽灵"
     },
     "9": {
       "id": 9,
-      "name": "Acier"
+      "name": "钢"
     },
     "10": {
       "id": 10,
-      "name": "Feu"
+      "name": "火"
     },
     "11": {
       "id": 11,
-      "name": "Eau"
+      "name": "水"
     },
     "12": {
       "id": 12,
-      "name": "Plante"
+      "name": "草"
     },
     "13": {
       "id": 13,
-      "name": "Électrik"
+      "name": "电"
     },
     "14": {
       "id": 14,
-      "name": "Psy"
+      "name": "超能力"
     },
     "15": {
       "id": 15,
-      "name": "Glace"
+      "name": "冰"
     },
     "16": {
       "id": 16,
-      "name": "Dragon"
+      "name": "龙"
     },
     "17": {
       "id": 17,
-      "name": "Ténèbres"
+      "name": "恶"
     },
     "18": {
       "id": 18,
-      "name": "Fée"
+      "name": "妖精"
     }
   },
   "efficacies": {

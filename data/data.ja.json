@@ -2,75 +2,75 @@
   "types": {
     "1": {
       "id": 1,
-      "name": "Normal"
+      "name": "ノーマル"
     },
     "2": {
       "id": 2,
-      "name": "Combat"
+      "name": "かくとう"
     },
     "3": {
       "id": 3,
-      "name": "Vol"
+      "name": "ひこう"
     },
     "4": {
       "id": 4,
-      "name": "Poison"
+      "name": "どく"
     },
     "5": {
       "id": 5,
-      "name": "Sol"
+      "name": "じめん"
     },
     "6": {
       "id": 6,
-      "name": "Roche"
+      "name": "いわ"
     },
     "7": {
       "id": 7,
-      "name": "Insecte"
+      "name": "むし"
     },
     "8": {
       "id": 8,
-      "name": "Spectre"
+      "name": "ゴースト"
     },
     "9": {
       "id": 9,
-      "name": "Acier"
+      "name": "はがね"
     },
     "10": {
       "id": 10,
-      "name": "Feu"
+      "name": "ほのお"
     },
     "11": {
       "id": 11,
-      "name": "Eau"
+      "name": "みず"
     },
     "12": {
       "id": 12,
-      "name": "Plante"
+      "name": "くさ"
     },
     "13": {
       "id": 13,
-      "name": "Électrik"
+      "name": "でんき"
     },
     "14": {
       "id": 14,
-      "name": "Psy"
+      "name": "エスパー"
     },
     "15": {
       "id": 15,
-      "name": "Glace"
+      "name": "こおり"
     },
     "16": {
       "id": 16,
-      "name": "Dragon"
+      "name": "ドラゴン"
     },
     "17": {
       "id": 17,
-      "name": "Ténèbres"
+      "name": "あく"
     },
     "18": {
       "id": 18,
-      "name": "Fée"
+      "name": "フェアリー"
     }
   },
   "efficacies": {

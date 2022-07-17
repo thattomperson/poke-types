@@ -3,12 +3,12 @@ const { writeFile } = require('fs/promises');
 require('next/dist/server/node-polyfill-fetch')
 
 const languagesQuery = `
-query Languages($_nin: [Int!] = [11, 2]) {
-  languages: pokemon_v2_language(where: {official: {_eq: true}, _and: {id: {_nin: $_nin}}}) {
+query Languages($language_ids: [Int!] = [11, 2, 4], $type_ids: [Int!] = [10001, 10002]) {
+  languages: pokemon_v2_language(where: {official: {_eq: true}, _and: {id: {_nin: $language_ids}}}) {
     id
     iso639
     name
-    pokemon_v2_typenames {
+    pokemon_v2_typenames(where: {pokemon_v2_type: {id: {_nin: $type_ids}}}) {
       id
       name
       pokemon_v2_type {
@@ -37,14 +37,33 @@ async function main() {
 
   const { data: { languages } } = await response.json();
 
-  console.log(languages)
-
-  await writeFile('./data/languages.json', JSON.stringify(languages.map(language => language.name), null, 2))
+  await writeFile('./data/languages.json', JSON.stringify(languages.map(language => language.iso639), null, 2))
 
   for (let index = 0; index < languages.length; index++) {
     const language = languages[index];
+    const out = {
+      types: language.pokemon_v2_typenames.reduce((acc, name) => {
+        acc[name.pokemon_v2_type.id] = {
+          id: name.pokemon_v2_type.id,
+          name: name.name
+        }
 
-    await writeFile(`./data/data.${language.name}.json`, JSON.stringify(language.pokemon_v2_typenames, null, 2))
+        return acc;
+      }, {}),
+      efficacies: language.pokemon_v2_typenames.reduce((acc, name) => {
+        acc[name.pokemon_v2_type.id] = {
+          id: name.pokemon_v2_type.id,
+          damage: name.pokemon_v2_type.pokemon_v2_typeefficacies.reduce((acc, e) => {
+            acc[e.target_type_id] = e.damage_factor / 100;
+
+            return acc;
+          }, {})
+        }
+        return acc;
+      }, {})
+    }
+
+    await writeFile(`./data/data.${language.iso639}.json`, JSON.stringify(out, null, 2))
   }
 }
 
