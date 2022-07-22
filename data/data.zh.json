@@ -2,75 +2,111 @@
   "types": {
     "1": {
       "id": 1,
-      "name": "一般"
+      "name": "一般",
+      "primaryColor": "#A8A878",
+      "secondaryColor": "#6D6D4E"
     },
     "2": {
       "id": 2,
-      "name": "格斗"
+      "name": "格斗",
+      "primaryColor": "#C03028",
+      "secondaryColor": "#7D1F1A"
     },
     "3": {
       "id": 3,
-      "name": "飞行"
+      "name": "飞行",
+      "primaryColor": "#A890F0",
+      "secondaryColor": "#6D5E9C"
     },
     "4": {
       "id": 4,
-      "name": "毒"
+      "name": "毒",
+      "primaryColor": "#A040A0",
+      "secondaryColor": "#682A68"
     },
     "5": {
       "id": 5,
-      "name": "地面"
+      "name": "地面",
+      "primaryColor": "#E0C068",
+      "secondaryColor": "#927D44"
     },
     "6": {
       "id": 6,
-      "name": "岩石"
+      "name": "岩石",
+      "primaryColor": "#B8A038",
+      "secondaryColor": "#786824"
     },
     "7": {
       "id": 7,
-      "name": "虫"
+      "name": "虫",
+      "primaryColor": "#A8B820",
+      "secondaryColor": "#6D7815"
     },
     "8": {
       "id": 8,
-      "name": "幽灵"
+      "name": "幽灵",
+      "primaryColor": "#705898",
+      "secondaryColor": "#493963"
     },
     "9": {
       "id": 9,
-      "name": "钢"
+      "name": "钢",
+      "primaryColor": "#B8B8D0",
+      "secondaryColor": "#787887"
     },
     "10": {
       "id": 10,
-      "name": "火"
+      "name": "火",
+      "primaryColor": "#F08030",
+      "secondaryColor": "#9C531F"
     },
     "11": {
       "id": 11,
-      "name": "水"
+      "name": "水",
+      "primaryColor": "#6890F0",
+      "secondaryColor": "#445E9C"
     },
     "12": {
       "id": 12,
-      "name": "草"
+      "name": "草",
+      "primaryColor": "#78C850",
+      "secondaryColor": "#4E8234"
     },
     "13": {
       "id": 13,
-      "name": "电"
+      "name": "电",
+      "primaryColor": "#F8D030",
+      "secondaryColor": "#A1871F"
     },
     "14": {
       "id": 14,
-      "name": "超能力"
+      "name": "超能力",
+      "primaryColor": "#F85888",
+      "secondaryColor": "#A13959"
     },
     "15": {
       "id": 15,
-      "name": "冰"
+      "name": "冰",
+      "primaryColor": "#98D8D8",
+      "secondaryColor": "#638D8D"
     },
     "16": {
       "id": 16,
-      "name": "龙"
+      "name": "龙",
+      "primaryColor": "#7038F8",
+      "secondaryColor": "#4924A1"
     },
     "17": {
       "id": 17,
-      "name": "恶"
+      "name": "恶",
+      "primaryColor": "#705848",
+      "secondaryColor": "#49392F"
     },
     "18": {
       "id": 18,
-      "name": "妖精"
+      "name": "妖精",
+      "primaryColor": "#EE99AC",
+      "secondaryColor": "#9B6470"
     }
   },
   "efficacies": {

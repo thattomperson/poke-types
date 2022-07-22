@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useState } from "react";
 import TypeSelector from "../components/TypeSelector";
 
 export async function getStaticProps({ locale }: { locale: string }) {
@@ -16,6 +17,8 @@ interface HomeProps {
   types: Record<number,{
     id: number,
     name: string,
+    primaryColor: string;
+    secondaryColor: string;
   }>,
   efficacies: Record<number, {
     id: number,
@@ -25,6 +28,22 @@ interface HomeProps {
 
 
 const Home: NextPage<HomeProps> = ({ types, efficacies }) => {
+  const [selected, setSelected] = useState([types[1] as {
+    id: number,
+    name: string,
+    primaryColor: string;
+    secondaryColor: string;
+  }]);
+  const t = Object.values(types).map(type => {
+    return {
+      ...type,
+      deals: selected.reduce((acc, v) => (efficacies[type.id]?.damage[v.id] ?? 0) * acc ,1)
+    }
+  })
+
+  console.log(t)
+
+
   return (
     <>
       <Head>
@@ -38,8 +57,8 @@ const Home: NextPage<HomeProps> = ({ types, efficacies }) => {
           Pokemon Type Match Ups
         </h1>
 
-        <TypeSelector />
-        {Object.values(types).map(type => (
+        <TypeSelector types={Object.values(types)} selected={selected} onChange={setSelected} />
+        {/* {Object.values(types).map(type => (
           <div className="mb-20" key={type.id}>
             {type.name}
             <div>
@@ -50,7 +69,7 @@ const Home: NextPage<HomeProps> = ({ types, efficacies }) => {
                 ))}
             </div>
           </div>
-        ))}
+        ))} */}
       </main>
     </>
   );

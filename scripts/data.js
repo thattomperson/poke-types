@@ -27,6 +27,81 @@ query Languages($language_ids: [Int!] = [11, 2, 4], $type_ids: [Int!] = [10001, 
 }
 `
 
+const typeColors = {
+  1: {
+    background: "#A8A878",
+    border: "#6D6D4E",
+  },
+  2: {
+    background: "#C03028",
+    border: "#7D1F1A",
+  },
+  3:{
+    background: "#A890F0",
+    border: "#6D5E9C",
+  },
+  4: {
+    background: "#A040A0",
+    border: "#682A68",
+  },
+  5:{
+    background: "#E0C068",
+    border: "#927D44",
+  },
+  6:{
+    background: "#B8A038",
+    border: "#786824",
+  },
+  7: {
+    background: '#A8B820',
+    border: '#6D7815',
+  },
+  8:{
+    background: "#705898",
+    border: "#493963",
+  },
+  9: {
+    background: "#B8B8D0",
+    border: "#787887",
+  },
+  10: {
+    background: "#F08030",
+    border: "#9C531F",
+  },
+  11: {
+    background: "#6890F0",
+    border: "#445E9C",
+  },
+  12: {
+    background: "#78C850",
+    border: "#4E8234",
+  },
+  13: {
+    background: "#F8D030",
+    border: "#A1871F",
+  },
+  14: {
+    background: "#F85888",
+    border: "#A13959",
+  },
+  15: {
+    background: "#98D8D8",
+    border: "#638D8D",
+  },
+  16: {
+    background: "#7038F8",
+    border: "#4924A1",
+  },
+  17: {
+    background: "#705848",
+    border: "#49392F",
+  },
+  18: {
+    background: "#EE99AC",
+    border: "#9B6470",
+  },
+}
+
 async function main() {
   const response = await fetch('https://beta.pokeapi.co/graphql/v1beta', {
     method: 'POST',
@@ -45,7 +120,9 @@ async function main() {
       types: language.pokemon_v2_typenames.reduce((acc, name) => {
         acc[name.pokemon_v2_type.id] = {
           id: name.pokemon_v2_type.id,
-          name: name.name
+          name: name.name,
+          primaryColor: typeColors[name.pokemon_v2_type.id].background,
+          secondaryColor: typeColors[name.pokemon_v2_type.id].border,
         }
 
         return acc;

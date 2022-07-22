@@ -2,75 +2,111 @@
   "types": {
     "1": {
       "id": 1,
-      "name": "ノーマル"
+      "name": "ノーマル",
+      "primaryColor": "#A8A878",
+      "secondaryColor": "#6D6D4E"
     },
     "2": {
       "id": 2,
-      "name": "かくとう"
+      "name": "かくとう",
+      "primaryColor": "#C03028",
+      "secondaryColor": "#7D1F1A"
     },
     "3": {
       "id": 3,
-      "name": "ひこう"
+      "name": "ひこう",
+      "primaryColor": "#A890F0",
+      "secondaryColor": "#6D5E9C"
     },
     "4": {
       "id": 4,
-      "name": "どく"
+      "name": "どく",
+      "primaryColor": "#A040A0",
+      "secondaryColor": "#682A68"
     },
     "5": {
       "id": 5,
-      "name": "じめん"
+      "name": "じめん",
+      "primaryColor": "#E0C068",
+      "secondaryColor": "#927D44"
     },
     "6": {
       "id": 6,
-      "name": "いわ"
+      "name": "いわ",
+      "primaryColor": "#B8A038",
+      "secondaryColor": "#786824"
     },
     "7": {
       "id": 7,
-      "name": "むし"
+      "name": "むし",
+      "primaryColor": "#A8B820",
+      "secondaryColor": "#6D7815"
     },
     "8": {
       "id": 8,
-      "name": "ゴースト"
+      "name": "ゴースト",
+      "primaryColor": "#705898",
+      "secondaryColor": "#493963"
     },
     "9": {
       "id": 9,
-      "name": "はがね"
+      "name": "はがね",
+      "primaryColor": "#B8B8D0",
+      "secondaryColor": "#787887"
     },
     "10": {
       "id": 10,
-      "name": "ほのお"
+      "name": "ほのお",
+      "primaryColor": "#F08030",
+      "secondaryColor": "#9C531F"
     },
     "11": {
       "id": 11,
-      "name": "みず"
+      "name": "みず",
+      "primaryColor": "#6890F0",
+      "secondaryColor": "#445E9C"
     },
     "12": {
       "id": 12,
-      "name": "くさ"
+      "name": "くさ",
+      "primaryColor": "#78C850",
+      "secondaryColor": "#4E8234"
     },
     "13": {
       "id": 13,
-      "name": "でんき"
+      "name": "でんき",
+      "primaryColor": "#F8D030",
+      "secondaryColor": "#A1871F"
     },
     "14": {
       "id": 14,
-      "name": "エスパー"
+      "name": "エスパー",
+      "primaryColor": "#F85888",
+      "secondaryColor": "#A13959"
     },
     "15": {
       "id": 15,
-      "name": "こおり"
+      "name": "こおり",
+      "primaryColor": "#98D8D8",
+      "secondaryColor": "#638D8D"
     },
     "16": {
       "id": 16,
-      "name": "ドラゴン"
+      "name": "ドラゴン",
+      "primaryColor": "#7038F8",
+      "secondaryColor": "#4924A1"
     },
     "17": {
       "id": 17,
-      "name": "あく"
+      "name": "あく",
+      "primaryColor": "#705848",
+      "secondaryColor": "#49392F"
     },
     "18": {
       "id": 18,
-      "name": "フェアリー"
+      "name": "フェアリー",
+      "primaryColor": "#EE99AC",
+      "secondaryColor": "#9B6470"
     }
   },
   "efficacies": {
